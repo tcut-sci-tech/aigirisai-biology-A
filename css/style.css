@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/*---------- 文字 ---------- */
+body {
+  font-family: 'M PLUS 1p', 'Montserrat', sans-serif;
+}
+
+h1 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 6vw;
+  text-align: center;
+  font-weight: 800;
+  color: #2857b1;
+}
+
+h2 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 4.5vw;
+  font-weight: 800;
+  color: #2857b1;
+}
+
+h3 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+h4 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 3.5vw;
+  font-weight: 800;
+  color: #00a7eb;
+}
+
+a {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 1.7vw;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+txt1 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #000000;
+}
+
+txt2 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2.5vw;
+  font-weight: 800;
+  color: #ff0000;
+}
+
+/*---------- ヘッダー ---------- */
+header {
+  height: 3vw;
+  width: 100%;
+  padding: 1vw 1vw 1vw 1vw;
+  background-color: #2857b1;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li a {
+  font-size: 2vw;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  line-height: 3vw;
+  padding: 0 1.5vw;
+}
+
+/*---------- ボタン ---------- */
+.btn{
+  position: relative;
+	overflow: hidden;
+  text-decoration: none;
+	display: inline-block;
+  border: 1px solid #000000;
+  padding: 1vw 1vw 1vw 1vw;
+  margin: 0.25vw 0vw 0.25vw 0vw;
+  text-align: center;
+  outline: none;
+  transition: ease .2s;
+  width: 90%;
+  height: auto;	
+}
+
+.btn span {
+  position: relative;
+  z-index: 3;
+  color:#000000;
+}
+
+.btn:hover span{
+	color:#ffffff;
+}
+
+.bgbottom:before {
+ 	content: '';
+  position: absolute;
+ 	bottom:0;
+ 	left: 0;
+ 	z-index: 2;
+  background:  #00a7eb;
+ 	width: 33vw;
+	height: 0;
+  transition:.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+}
+
+.bgbottom:hover:before{
+  height: 100%;	
+  background-color: #00a7eb;
+}
+
+/*---------- ボックス ---------- */
+.box6 {
+    padding: 1vw 1vw 1vw 1vw;
+    margin: 1.5vw 0vw 1.5vw 0vw;
+    background: #ffffff;
+    border: dashed 0.3vw #808080;
+}
+
+/*---------- セクション ---------- */
+.sec02 {
+  margin: 0 0 0 0;
+	height: auto;
+	background-color: #dcdcdc;
+}
+
+.sec04 {
+  margin: 0 0 0 0;
+	height: auto;
+	background-color: #dcdcdc;
+}
+
+.sec06 {
+  margin: 0 0 0 0;
+	height: auto;
+	background-color: #dcdcdc;
+}
+
+.sec07 {
+  margin: 0 0 0 0;
+	height: auto;
+	background-color: #2857b1;
+}
+
+/*---------- 画面分割 ---------- */
+.flex_div {
+  display: flex;
+  justify-content: center;
+}
+
+.a_div {
+  display: inline-block;
+  width: 10%;
+  padding:0vw;
+  margin: 0vw 0vw 0vw 0vw;
+}
+
+.a_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.b_div {
+  display: inline-block;
+  width: 80%;
+  padding:0vw;
+  margin: 0vw 0vw 0vw 0vw;
+}
+
+.b_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.c_div {
+  display: inline-block;
+  width: 40%;
+  padding:0vw;
+  margin: 0vw 1vw 0vw 1vw;
+}
+
+.c_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.d_div {
+  display: inline-block;
+  width: 70%;
+  padding:0vw;
+  margin: 0vw 1vw 0vw 1vw;
+}
+
+.d_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.e_div {
+  display: inline-block;
+  width: 50%;
+  padding:0vw;
+  margin: 0vw 1vw 0vw 1vw;
+}
+
+.e_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
