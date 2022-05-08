@@ -213,7 +213,7 @@ txt1 {
 
 #header.dnone.panelactive #g-navi{
   opacity: 1;
-	z-index:3;
+	z-index:100;
 	background:#eee;
 }
 
