@@ -162,7 +162,7 @@ txt1 {
 }
 
 #header{
-  height: 3vw;
+  height: 4.5vw;
 	width:100%;
 	display: flex;
 	justify-content: space-between;
@@ -191,7 +191,7 @@ txt1 {
 	display: block;
 	text-decoration: none;
 	color: #ffffff;
-  font-size: 2vw;
+  font-size: 3vw;
   font-weight: 700;
 	padding:1vw;
 }
@@ -223,7 +223,7 @@ txt1 {
 
 #header.dnone.panelactive #g-navi li a{
 	color: #333;
-  font-size: 2vw;
+  font-size: 4vw;
   font-weight: 700;
 	text-decoration: none;
 	padding:1vw;
