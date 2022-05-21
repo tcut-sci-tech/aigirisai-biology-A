@@ -37,33 +37,7 @@ h3 {
 h4 {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 2.3vw;
-  text-align: center;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-h4:hover{
-  opacity: 0.5;
-}
-
-h5 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 1.7vw;
-  text-align: right;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-h5:hover{
-  opacity: 0.5;
-}
-
-h6 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 5vw;
+  font-size: 4.5vw;
   text-align: left;
   font-weight: 800;
   color: #00a7eb;
@@ -78,6 +52,14 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2vw;
+  font-weight: 500;
+  color: #000000;
+}
+
 txt1 {
   margin: 0 0 0 0;
   position: relative;
@@ -86,20 +68,75 @@ txt1 {
   color: #000000;
 }
 
-/*---------- ヘッダー ---------- */
-.openbtn{
-  display: none;
-  position:fixed;
-	top:10px;
-	right: 10px;
-	z-index: 999;
-  background:#2857b1;
-	cursor: pointer;
-  width: 50px;
-  height:50px;
-	border-radius: 5px;
+txt2 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2.3vw;
+  font-weight: 700;
+  color: #000000;
 }
 
+/*---------- ヘッダー ---------- */
+#g-nav{
+  position:fixed;
+  z-index: 999;
+  top:-120%;
+  left:0;
+	width:100%;
+  height: 100vh;
+	background:#00a7eb;
+  transition: all 0.6s;
+}
+
+#g-nav.panelactive{
+  top: 0;
+}
+
+#g-nav.panelactive #g-nav-list{
+  position: fixed;
+  z-index: 999; 
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#g-nav ul {
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+#g-nav li{
+  list-style: none;
+  text-align: center; 
+}
+
+#g-nav li a{
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+/*---------- ヘッダー ボタン ---------- */
+.openbtn{
+  position:fixed;
+  z-index: 9999;
+  top:10px;
+	right: 10px;
+	cursor: pointer;
+  width: 75px;
+  height:75px;
+}
+	
 .openbtn span{
   display: inline-block;
   transition: all .4s;
@@ -107,20 +144,20 @@ txt1 {
   left: 14px;
   height: 3px;
   border-radius: 2px;
-	background-color: #fff;
+	background-color: #666;
   width: 45%;
-}
+  }
 
 .openbtn span:nth-of-type(1) {
-  top:15px;	
+	top:15px;	
 }
 
 .openbtn span:nth-of-type(2) {
-	top:23px;
+	top:27px;
 }
 
 .openbtn span:nth-of-type(3) {
-	top:31px;
+	top:39px;
 }
 
 .openbtn.active span:nth-of-type(1) {
@@ -141,160 +178,50 @@ txt1 {
   width: 30%;
 }
 
-.fadeDown {
-  animation-name: fadeDownAnime;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-  display: block;
-}
-
-@keyframes fadeDownAnime{
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-#header{
-  height: 4.5vw;
-	width:100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background:#2857b1;
-	color:#fff;
-	text-align: center;
-	padding: 1vw;
-}
-
-#header.dnone {
-  opacity: 0;
-}
-
-#header.dnone.panelactive {
-  opacity: 1;
-}
-
-#g-navi ul{
-  list-style: none;
-	display: flex;
-	justify-content: center;
-}
-
-#g-navi ul li a{
-	display: block;
-	text-decoration: none;
-	color: #ffffff;
-  font-size: 3vw;
-  font-weight: 700;
-	padding:1vw;
-}
-
-#header.dnone #g-navi{
-  position:fixed;
-	top: 0;
-  left: 0;
-	z-index: -1;
-  width:100%;
-	height: 100vh;
-  display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-  opacity: 0;
-	transition: all 0.4s;
-}
-
-#header.dnone.panelactive #g-navi{
-  opacity: 1;
-	z-index:999;
-	background:#eee;
-}
-
-#header.dnone.panelactive #g-navi ul{
-  display:block;
-}
-
-#header.dnone.panelactive #g-navi li a{
-	color: #333;
-  font-size: 4vw;
-  font-weight: 700;
-	text-decoration: none;
-	padding:1vw;
-	display: block;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-weight: bold;
-	transition:all 0.3s;
-  position: relative;
-}
-
 /*---------- ボタン ---------- */
-.btn{
+.btn06{
   position: relative;
-	overflow: hidden;
   text-decoration: none;
 	display: inline-block;
-  border: 1px solid #000000;
-  padding: 1vw 1vw 1vw 1vw;
-  margin: 0.25vw 0vw 0.25vw 0vw;
+	background:#009fe8;
+	color:#fff;
+  padding: 10px 40px 10px 30px;
+	border-radius:25px;
   text-align: center;
   outline: none;
   transition: ease .2s;
-  width: 90%;
-  height: auto;	
-}
-
-.btn span {
-  position: relative;
-  z-index: 3;
   font-size: 2.3vw;
-  font-weight: 800;
-  color:#000000;
+  font-weight: 600;
+  color: #ffffff;
 }
 
-.btn:hover span{
-	color:#ffffff;
+.btn06:hover{
+  background:#4ab8f7;
 }
 
-.bgbottom:before {
- 	content: '';
+.btnarrow2::after{
+  content: '';
   position: absolute;
- 	bottom:0;
- 	left: 0;
- 	z-index: 2;
-  background:  #00a7eb;
- 	width: 100%;
-	height: 0;
-  transition:.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  top:42%;
+  right: 13px;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
 }
 
-.bgbottom:hover:before{
-  height: 100%;	
-  background-color: #00a7eb;
+.btnarrow2:hover::after{
+  animation: arrow .5s;
 }
 
-/*---------- ボックス ---------- */
-.box8 {
-  padding: 1vw 1vw 1vw 1vw;
-  margin: 1.5vw 0vw 1.5vw 0vw;
-  color: #232323;
-  background: #f1f1f1;
-  border-left: solid 10px #ffc06e;
-}
-
-.box8 p {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2vw;
-  font-weight: 500;
-  color: #b22222;
+@keyframes arrow {
+  50% {
+    right: 10px;
+  }
+  100% {
+    right: 13px;
+  }
 }
 
 /*---------- セクション ---------- */
@@ -398,10 +325,9 @@ txt1 {
 
 .c_div {
   display: inline-block;
-  width: 23%;
+  width: 50%;
   padding:0vw;
-  margin: 0vw 0vw 0vw 0vw;
-  background-color: #009fe8;
+  margin: 0vw 1vw 0vw 1vw;
 }
 
 .c_div img {
@@ -412,10 +338,9 @@ txt1 {
 
 .d_div {
   display: inline-block;
-  width: 23%;
+  width: 40%;
   padding:0vw;
-  margin: 0vw 0vw 0vw 0vw;
-  background-color: #2857b1;
+  margin: 0vw 1vw 0vw 1vw;
 }
 
 .d_div img {
@@ -426,38 +351,12 @@ txt1 {
 
 .e_div {
   display: inline-block;
-  width: 40%;
-  padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
-}
-
-.e_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
-}
-
-.f_div {
-  display: inline-block;
   width: 70%;
   padding:0vw;
   margin: 0vw 1vw 0vw 1vw;
 }
 
-.f_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
-}
-
-.g_div {
-  display: inline-block;
-  width: 50%;
-  padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
-}
-
-.g_div img {
+.e_div img {
   display: inline-block;
 	width: 100%;
 	height: auto;
