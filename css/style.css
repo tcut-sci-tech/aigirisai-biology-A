@@ -46,8 +46,8 @@ h4 {
 a {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 2vw;
-  font-weight: 700;
+  font-size: 1.7vw;
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
 }
@@ -55,7 +55,7 @@ a {
 txt1 {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 2.3vw;
+  font-size: 2vw;
   font-weight: 500;
   color: #000;
 }
