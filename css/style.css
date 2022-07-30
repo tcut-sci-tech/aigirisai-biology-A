@@ -55,7 +55,7 @@ a {
 txt1 {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 2.3vw;
+  font-size: 2vw;
   font-weight: 500;
   color: #000;
 }
@@ -251,8 +251,8 @@ ul.ddmenu ul ul {
 
 /*---------- 画面分割 ---------- */
 .flex_div {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .a_div {
@@ -270,7 +270,7 @@ ul.ddmenu ul ul {
 
 .b_div {
   display: inline-block;
-  width: 100%;
+  width: 90%;
   padding:0vw;
   margin: 0vw 0vw 0vw 0vw;
 }
@@ -289,7 +289,7 @@ ul.ddmenu ul ul {
 }
 
 .c_div img {
-        display: inline-block;
+  display: inline-block;
 	width: 100%;
 	height: auto;
 }
