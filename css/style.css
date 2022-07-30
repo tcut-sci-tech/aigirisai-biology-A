@@ -251,7 +251,7 @@ ul.ddmenu ul ul {
 
 /*---------- 画面分割 ---------- */
 .flex_div {
-  display: flex;
+  display: block;
   justify-content: center;
 }
 
