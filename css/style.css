@@ -252,7 +252,8 @@ ul.ddmenu ul ul {
 /*---------- 画面分割 ---------- */
 .flex_div {
   display: block;
-  justify-content: center;
+ 
+　text-align: center;
 }
 
 .a_div {
