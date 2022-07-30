@@ -321,6 +321,6 @@ ul.ddmenu ul ul {
 }
 
 .flex2_div  {
-  display: block;
+  display: inline-block;
   justify-content: center;
 }
