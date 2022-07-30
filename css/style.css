@@ -277,6 +277,7 @@ ul.ddmenu ul ul {
 
 .b_div img {
   display: inline-block;
+  justfy-content: center;
 	width: 90%;
 	height: auto;
 }
