@@ -1,73 +1,150 @@
-@charset "UTF-8";
-
-/*---------- 文字 ---------- */
-body {
+body{
+  margin:0;
+  padding:0;
   font-family: 'M PLUS 1p', 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
+  width:100vw;
+  background-color:#fff;
 }
 
+/*----font----*/
 h1 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 6vw;
+  margin:0;
+  font-size: 8vw;
   text-align: center;
   font-weight: 800;
-  color: #2857b1;
+  color: #036eb7;
 }
 
 h2 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 5.5vw;
+  margin:0 5vw;
+  font-size: 6vw;
   text-align: left;
   font-weight: 800;
-  color: #2857b1;
+  color: #036eb7;
 }
 
-h3 {
-  margin: 0 0 0 0;
-  position: relative;
+h6{
+  margin:0;
   font-size: 1.5vw;
-  text-align: center;
   font-weight: 800;
   color: #fff;
 }
 
-h4 {
+tit4 {
   margin: 0 0 0 0;
+  padding:0;
+  line-height:normal;
   position: relative;
-  font-size: 4.5vw;
-  text-align: left;
+  font-size: 3.5vw;
   font-weight: 800;
-  color: #00a7eb;
+  color: #000;
 }
 
-a {
+tit5 {
   margin: 0 0 0 0;
+  padding:0;
+  line-height:normal;
   position: relative;
-  font-size: 1.7vw;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
+  font-size: 2.5vw;
+  font-weight: 800;
+  color: #000;
 }
 
 txt1 {
   margin: 0 0 0 0;
+  padding:0;
+  line-height:normal;
   position: relative;
-  font-size: 2.3vw;
+  font-size: 2vw;
   font-weight: 500;
   color: #000;
 }
 
-txt2 {
+txt3{
   margin: 0 0 0 0;
   position: relative;
   font-size: 2.3vw;
   font-weight: 700;
   color: #fff;
 }
+/*---color---*/
+whi{
+  color:#fff;
+}
 
+/*---flex---*/
+.flex{
+  display:flex;
+}
+
+.block{
+  display:inline-block;
+  height:auto;
+  width:5vw;
+}
+
+.a-div{
+  display:inline-block;
+  height:auto;
+  width:55vw;
+}
+
+.a-div-img{
+  display:inline-block;
+  height:auto;
+  width:35vw;
+}
+/*---link---*/
+a {
+  margin: 0 0 0 0;
+  font-size: 1.7vw;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.op a:hover{
+	color: #fff;
+	opacity: 0.5;
+}
+
+.twitter a::before{
+  content: '';
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-image: url(https://tcut-sci-tech.github.io/photos/Logo%20twitter.png);  
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 1vw;
+}
+
+.tcu a::before{
+  content: '';
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-image: url(https://tcut-sci-tech.github.io/photos/Logo%20tcu.png);  
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 1vw;
+}
+
+.sci a::before{
+  content: '';
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-image: url(https://tcut-sci-tech.github.io/photos/Logo%20sci.png);  
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 1vw;
+}
+
+/*---------- メニューバー ---------- */
 /*---------- メニューバー ---------- */
 ul.ddmenu {
   margin: 0px;
@@ -76,7 +153,7 @@ ul.ddmenu {
 }
 
 ul.ddmenu li {
-  width: 225px;
+  width: 20vw;
   display: inline-block;
   list-style-type: none;
   position: relative;
@@ -86,7 +163,7 @@ ul.ddmenu a {
   background-color: #2857b1;
   color: #fff;
   font-size: 2.3vw;
-  line-height: 55px;
+  line-height: 10vw;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -111,12 +188,12 @@ ul.ddmenu ul {
 }
 
 ul.ddmenu ul li {
-  width: 225px;
+  width: 20vw;
   border-top: 1px solid white;
 }
 
 ul.ddmenu ul li a {
-  line-height: 55px;
+  line-height: 10vw;
   text-align: left;
   padding-left: 5px;
   font-weight: normal;
@@ -136,186 +213,59 @@ ul.ddmenu ul ul {
   border-left: 1px solid white;
 }
 
-/*---------- ボタン ---------- */
-.btn06{
-  position: relative;
-  text-decoration: none;
-	display: inline-block;
-	background:#009fe8;
-	color:#fff;
-  padding: 10px 40px 10px 30px;
-	border-radius:25px;
-  text-align: center;
-  outline: none;
-  transition: ease .2s;
-  font-size: 2.3vw;
-  font-weight: 600;
-  color: #ffffff;
+
+/*--main---*/
+main{
+  margin:0;
+  padding:0;
+  height:auto;
+  width:100vw;
 }
 
-.btn06:hover{
-  background:#4ab8f7;
+.sec1,.sec2,.sec4,.sec6{
+  margin:0;
+  padding:0;
+  height:cover;
+  width:100vw;
+  background-color:#fff;
 }
 
-.btnarrow2::after{
-  content: '';
+.sec3,.sec5,.sec7{
+  margin:0;
+  padding:0;
+  height:cover;
+  width:100vw;
+  background-color:#ccc;
+}
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width:100vw;
+  height:100vw;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
   position: absolute;
-  top:42%;
-  right: 13px;
-  width: 5px;
-  height: 5px;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+    z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }
 
-.btnarrow2:hover::after{
-  animation: arrow .5s;
-}
-
-@keyframes arrow {
-  50% {
-    right: 10px;
-  }
-  100% {
-    right: 13px;
-  }
-}
-
-/*---------- セクション ---------- */
-.sec03 {
-  margin: 0 0 0 0;
-	height: auto;
-	background-color: #dcdcdc;
-}
-
-.sec05 {
-  margin: 0 0 0 0;
-	height: auto;
-	background-color: #dcdcdc;
-}
-
-.sec07 {
-  margin: 0 0 0 0;
-	height: auto;
-	background-color: #dcdcdc;
-}
-
-.sec08 {
-  margin: 0 0 0 0;
-	height: auto;
-	background-color: #2857b1;
-}
-
-/*---------- フッター リンク ---------- */
-.op a:hover{
-	color: #fff;
-	opacity: 0.5;
-}
-
-.twitter a::before{
-  content: '';
-  display: inline-block;
-  width: 2.5vw;
-  height: 2.5vw;
-  background-image: url(https://tcut-sci-tech.github.io/photo/Logo%20twitter.png);  
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 1vw;
-}
-
-.tcu a::before{
-  content: '';
-  display: inline-block;
-  width: 2.5vw;
-  height: 2.5vw;
-  background-image: url(https://tcut-sci-tech.github.io/photo/Logo%20tcu.png);  
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 1vw;
-}
-
-.sci a::before{
-  content: '';
-  display: inline-block;
-  width: 2.5vw;
-  height: 2.5vw;
-  background-image: url(https://tcut-sci-tech.github.io/photo/Logo%20sci.png);  
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 1vw;
-}
-
-/*---------- 画面分割 ---------- */
-.flex_div {
-  display: flex;
-  justify-content: center;
-}
-
-.a_div {
-  display: inline-block;
-  width: 5%;
-  padding:0vw;
-  margin: 0vw 0vw 0vw 0vw;
-}
-
-.a_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
-}
-
-.b_div {
-  display: inline-block;
-  width: 90%;
-  padding:0vw;
-  margin: 0vw 0vw 0vw 0vw;
-}
-
-.b_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
-}
-
-.c_div {
-  display: inline-block;
-  width: 50%;
-  padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
-}
-
-.c_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
-}
-
-.d_div {
-  display: inline-block;
-  width: 40%;
-  padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
-}
-
-.d_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
-}
-
-.e_div {
-  display: inline-block;
-  width: 70%;
-  padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
-}
-
-.e_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
+footer{
+  margin:0;
+  padding:0;
+  height:auto;
+  width:100vw;
+  background-color:#2857b1;
 }
