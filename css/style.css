@@ -240,27 +240,6 @@ main{
 
 /* Loading背景画面設定　*/
 
-#splash {
-    /*fixedで全面に固定*/
-  position: fixed;
-  z-index: 999;
-  width:100vw;
-  height:100vw;
-  background:#333;
-  text-align:center;
-  color:#fff;
-}
-
-/* Loadingバー中央配置　*/
-#splash_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-    z-index: 999;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
 
 footer{
   margin:0;
